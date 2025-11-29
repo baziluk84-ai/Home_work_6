@@ -1,0 +1,15 @@
+| **Команда**                               | **Призначення / Пояснення**                              |
+| ----------------------------------------- | -------------------------------------------------------- |
+| python --version або py --version     | Перевірити версію Python у системі                       |
+| python -m venv .venv                    | Створити віртуальне середовище у папці .venv           |
+| .venv\Scripts\activate (Windows)        | Активувати віртуальне середовище                         |
+| source .venv/bin/activate (Linux/macOS) | Активувати віртуальне середовище                         |
+| deactivate                              | Деактивувати віртуальне середовище                       |
+| pip install package_name                | Встановити пакет у середовище                            |
+| pip uninstall package_name              | Видалити пакет із середовища                             |
+| pip list                                | Показати список встановлених пакетів                     |
+| pip freeze                              | Показати всі пакети та їхні версії (для requirements)    |
+| pip freeze > requirements.txt           | Зберегти всі поточні пакети у файл requirements.txt    |
+| pip install -r requirements.txt         | Встановити всі пакети з requirements.txt               |
+| pip show package_name                   | Показати інформацію про пакет (версія, залежності, шлях) |
+| python -m pip install --upgrade pip     | Оновити pip у середовищі                                 |
