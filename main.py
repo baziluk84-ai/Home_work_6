@@ -6,7 +6,7 @@ from tkinter import filedialog, messagebox
 
 
 def archive_folder(folder_path: str, output_dir: str):
-    """Функція архівування — виконується в окремому процесі."""
+    #Функція архівування — виконується в окремому процесі.
     folder_name = os.path.basename(folder_path)
     archive_path = os.path.join(output_dir, folder_name)
 
@@ -15,7 +15,7 @@ def archive_folder(folder_path: str, output_dir: str):
 
 
 def start_archiving(base_folder: str):
-    """Створює процеси та запускає архівування всіх вкладених папок першого рівня."""
+    #Створює процеси та запускає архівування всіх вкладених папок першого рівня.
 
     if not os.path.isdir(base_folder):
         messagebox.showerror("Помилка", "Вибрана папка недійсна.")
@@ -54,7 +54,7 @@ def start_archiving(base_folder: str):
 
 
 def create_gui():
-    """Створення інтерфейсу Tkinter."""
+    #Створення вікна архіватора.
     root = tk.Tk()
     root.title("Архіватор папок")
 
